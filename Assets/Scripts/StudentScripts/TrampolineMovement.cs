@@ -12,13 +12,13 @@ public class TrampolineMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         time += Time.deltaTime;
-        Debug.Log(time);
+        //Debug.Log(time);
         if(time > moveTime)
         {
             time = 0;
             direction = direction * -1;
         }
         transform.position += direction * Time.deltaTime * moveSpeed;
-        Debug.Log(transform.position);
+        //Debug.Log(transform.position);
 	}
 }
